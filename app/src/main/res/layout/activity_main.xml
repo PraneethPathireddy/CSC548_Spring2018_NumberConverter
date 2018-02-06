@@ -9,7 +9,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="47dp">
 
         <EditText
             android:id="@+id/mbET"
@@ -25,15 +28,84 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="clickMeButtonPressed"
-            android:text="Click Me" />
+            android:text="Calculate" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearButtonPressed"
+            android:text="Clear" />
 
         <TextView
             android:id="@+id/bitsTV"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView"
+            android:layout_height="29dp"
+            android:text="bits"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/kbitsTV"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="kb"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mbitsTV"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="mb"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/gbitsTV"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="gb"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tbitsTV"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="tb"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/bytesTV"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Bytes"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/kbytesTV"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="KB"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/mbytesTV"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="MB"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/gbytesTV"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="GB"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tbytesTV"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="TB"
+            android:textAlignment="center" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
